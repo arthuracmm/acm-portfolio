@@ -2,7 +2,6 @@ import { CheckCircle } from "lucide-react";
 import { Header } from "../components/Header";
 import { HeaderBlog } from "../components/HeaderBlog";
 import { LanguageIcons } from "../components/LanguageIcons";
-import minhaFoto from '../../public/images/minha-foto.jpeg'
 
 
 export function Home() {
@@ -20,7 +19,7 @@ export function Home() {
                     </div>
 
                     <div className="flex justify-between gap-8 items-center h-full">
-                        <img src={minhaFoto} alt="a" className="size-100 rounded-full object-cover shadow-lg border-2 border-teal-500" />
+                        <img src='https://i.imgur.com/62gGTQL.png' alt='Foto de Arthur usando uma mochila' className="size-100 rounded-full object-cover shadow-lg border-2 border-teal-500" />
                         <div className="flex flex-col h-100 justify-between">
                             <p><span className="text-teal-500 font-bold text-lg">Hello World!</span> Meu nome é</p>
                             <h1 className="text-7xl font-bold">Arthur <span className="text-teal-500">Cesar</span></h1>

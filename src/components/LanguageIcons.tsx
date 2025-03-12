@@ -1,5 +1,5 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact } from 'react-icons/fa';
-import { SiAdobephotoshop, SiMongodb, SiTailwindcss, SiVite, SiAdobeillustrator} from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaReact } from 'react-icons/fa';
+import { SiAdobephotoshop, SiMongodb, SiTailwindcss, SiVite, SiTypescript, SiJavascript} from "react-icons/si";
 import { RiFirebaseFill } from "react-icons/ri";
 
 export function LanguageIcons() {
@@ -20,9 +20,16 @@ export function LanguageIcons() {
             </div>
 
             <div className="relative group">
-                <FaJs className="hover:text-teal-500 transition duration-300 cursor-pointer hover:scale-110 size-10" />
+                <SiJavascript className="hover:text-teal-500 transition duration-300 cursor-pointer hover:scale-110 size-10" />
                 <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 bg-black/90 p-2 rounded-md text-sm font-light">
                     JavaScript
+                </span>
+            </div>
+            
+            <div className="relative group">
+                <SiTypescript className="hover:text-teal-500 transition duration-300 cursor-pointer hover:scale-110 size-10" />
+                <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 bg-black/90 p-2 rounded-md text-sm font-light text-center">
+                    Typescrypt
                 </span>
             </div>
 
@@ -65,12 +72,6 @@ export function LanguageIcons() {
                 <SiAdobephotoshop className="hover:text-teal-500 transition duration-300 cursor-pointer hover:scale-110 size-10" />
                 <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 bg-black/90 p-2 rounded-md text-sm font-light text-center">
                     Adobe Photoshop
-                </span>
-            </div>
-            <div className="relative group">
-                <SiAdobeillustrator className="hover:text-teal-500 transition duration-300 cursor-pointer hover:scale-110 size-10" />
-                <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 bg-black/90 p-2 rounded-md text-sm font-light text-center">
-                    Adobe Ilustrator
                 </span>
             </div>
         </div>

@@ -6,29 +6,25 @@ export function HeaderBlog(){
 
     const verifyPath = (path: string) => {
         return location.pathname === path 
-        ? 'text-teal-500'
+        ? 'text-teal-500 underline'
         : 'text-white';
     }
     return(
-        <div className="flex bg-zinc-800 rounded-bl-2xl absolute -top-1 -right-1 py-6 gap-8 border-1 border-zinc-600 text-sm px-10 z-1000">
+        <div className="flex absolute -top-1 -right-1 py-6 gap-8 text-sm px-10 z-1000">
         <Link to='/'>
-            <p className={`hover:text-teal-500 transition-all ${verifyPath('/')}`}>Sobre</p>
+            <p className={`hover:text-teal-500 transition-all underline-offset-2 ${verifyPath('/')}`}>Sobre</p>
         </Link>
 
         <Link to='/projetos'>
-            <p className={`hover:text-teal-500 transition-all ${verifyPath('/projetos')}`}>Projetos</p>
-        </Link>
-
-        <Link to='/formacao'>
-            <p className={`hover:text-teal-500 transition-all ${verifyPath('/formacao')}`}>Formação</p>
+            <p className={`hover:text-teal-500 transition-all underline-offset-2 ${verifyPath('/projetos')}`}>Projetos</p>
         </Link>
 
         <Link to='/resumo'>
-            <p className={`hover:text-teal-500 transition-all ${verifyPath('/resumo')}`}>Resumo</p>
+            <p className={`hover:text-teal-500 transition-all underline-offset-2 ${verifyPath('/resumo')}`}>Resumo</p>
         </Link>
 
         <Link to='/contato'>
-            <p className={`hover:text-teal-500 transition-all ${verifyPath('/contato')}`}>Contato</p>
+            <p className={`hover:text-teal-500 transition-all underline-offset-2 ${verifyPath('/contato')}`}>Contato</p>
         </Link>
     </div>
     )

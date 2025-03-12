@@ -1,7 +1,7 @@
 import { IoMdMail } from "react-icons/io";
 import { IoLocationSharp, IoPhonePortraitSharp } from "react-icons/io5";
 import { CgCalendarDates } from "react-icons/cg";
-import minhaFoto from "../../public/images/meu-memoji.png"
+import minhaFoto from "/images/meu-memoji.png"
 import { LanguageIcons } from "./LanguageIcons";
 
 export function SideBarBlog() {

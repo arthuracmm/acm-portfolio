@@ -78,7 +78,7 @@ export function Projetos() {
                         <p>Projetos</p>
                         <div className="w-15 h-1 rounded-lg bg-teal-500" />
 
-                        <div className="flex mt-8 gap-x-4 gap-y-8 flex-wrap justify-self-center start relative pt-12">
+                        <div className="flex mt-3 gap-x-4 gap-y-8 flex-wrap justify-self-center start relative pt-12">
                             <div className="absolute w-full top-0 flex justify-between h-10 overflow-hidden transition-all">
                                 <div className="flex bg-zinc-800 px-2 rounded-lg w-100 justify-between items-center overflow-hidden">
                                     <input type="text"
