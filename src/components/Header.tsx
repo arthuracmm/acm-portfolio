@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function Header(){
     return(
-        <div className="flex w-full bg-zinc-900 text-white px-10 py-5 fixed text-lg">
+        <div className="flex w-full bg-zinc-900 text-white px-10 py-5 fixed text-lg z-1000">
             <div className="flex justify-between w-full items-center">
                 <Link to={'/'} className="flex gap-4 items-center">
                 <p className="font-semibold text-2xl">Arthur <span className="font-bold text-teal-500">Cesar</span></p>
