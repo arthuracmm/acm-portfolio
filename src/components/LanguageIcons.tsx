@@ -5,8 +5,8 @@ import { RiFirebaseFill } from "react-icons/ri";
 export function LanguageIcons() {
     return (
         <div className="flex">
-            <div className="flex flex-col md:flex-row gap-2 items-center">
-                <div className="flex gap-2 flex-wrap">
+            <div className="flex flex-wrap gap-2 items-center w-full justify-center">
+                <div className="flex gap-2">
                     <div className="relative group">
                         <FaHtml5 className="hover:text-teal-500 transition duration-300 cursor-pointer hover:scale-110 size-10" />
                         <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 bg-black/90 p-2 rounded-md text-sm font-light">

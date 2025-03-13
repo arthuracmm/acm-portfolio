@@ -8,17 +8,16 @@ export function Home() {
     return (
         <div className="flex flex-col h-screen w-full bg-zinc-950 font-montserrat text-white">
             <Header />
-            <div className="flex mt-20 h-full justify-center items-center">
-                <div className="flex flex-col font-semibold gap-4 bg-zinc-900 lg:w-[70%] md:w-[80%] w-[85%] lg:h-180 h-fit p-8 rounded-2xl shadow-lg relative overflow-hidden">
-                    <div className="flex flex-col">
-                        <div className="flex flex-col gap-1 lg:text-xl">
-                            <p>Home</p>
+            <div className="flex mt-10 h-full justify-center items-center">
+                <div className="flex flex-col font-semibold gap-4 bg-zinc-900 lg:w-[70%] md:w-[80%] w-[85%] lg:h-180 h-[90%] md:h-[75%] md:p-8 p-4 rounded-2xl shadow-lg overflow-hidden">
+                    <div className="flex flex-col relative w-full h-full items-center md:items-start">
+                        <div className="flex flex-col gap-1 items-center md:items-start">
+                            <p className="lg:text-xl text-base">Home</p>
                             <div className="lg:w-13 md:w-10 w-8 h-1 rounded-lg bg-teal-500" />
                         </div>
                         <HeaderBlog />
                     </div>
-
-                    <div className="flex lg:flex-row flex-col justify-center gap-8 h-full items-center">
+                    <div className="flex lg:flex-row flex-col justify-center gap-8 h-3000 items-center">
 
                         <img src='https://i.imgur.com/62gGTQL.png' alt='Foto de Arthur usando uma mochila' className="lg:size-100 md:size-80 size-50 rounded-full object-cover shadow-lg border-2 border-teal-500" />
 
@@ -33,14 +32,15 @@ export function Home() {
                             </div>
 
                             <div className="flex items-center gap-4 text-md w-full">
-                            <CheckCircle size={24} className="bg-teal-500 md:size-8 size-5 p-2 rounded-full box-content aspect-[1/1]" />
-                            <p className="w-[80%] lg:w-full text-[12px] md:text-base">Cursando Desenvolvimento de Software Multiplataforma FATEC Franca - SP</p>
+                                <CheckCircle size={24} className="bg-teal-500 md:size-8 size-5 p-2 rounded-full box-content aspect-[1/1]" />
+                                <p className="w-[80%] lg:w-full text-[12px] md:text-base">Cursando Desenvolvimento de Software Multiplataforma FATEC Franca - SP</p>
                             </div>
 
                             <LanguageIcons />
 
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

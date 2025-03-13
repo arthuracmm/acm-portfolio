@@ -6,9 +6,9 @@ import { LanguageIcons } from "./LanguageIcons";
 
 export function SideBarBlog() {
     return (
-        <div className="flex flex-col bg-zinc-900 rounded-2xl shadow-lg p-8 w-80 justify-between items-center">
+        <div className="lg:flex hidden flex-col bg-zinc-900 rounded-2xl shadow-lg p-8 w-80 justify-between items-center">
             <div className="flex size-50 rounded-full p-5 bg-zinc-800 box-content items-center justify-center">
-                <img src={minhaFoto} alt="minha foto" className="w-40"/>
+                <img src={minhaFoto} alt="minha foto" className="w-40" />
             </div>
 
             <h1 className="bg-zinc-800 px-4 py-1 rounded-lg w-fit text-sm font-light">Arthur Cesar</h1>

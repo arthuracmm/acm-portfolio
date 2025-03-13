@@ -10,7 +10,7 @@ export function HeaderBlog(){
         : 'text-white';
     }
     return(
-        <div className="flex md:absolute md:-top-1 md:-right-1 md:py-6 py-4 gap-8 md:text-sm text-[12px] md:px-10 z-10 justify-center">
+        <div className="flex md:absolute md:-top-6 md:-right-10 md:py-6 py-4 gap-8 md:text-sm text-[12px] md:px-10 z-10 justify-center">
         <Link to='/'>
             <p className={`hover:text-teal-500 transition-all underline-offset-2 ${verifyPath('/')}`}>Sobre</p>
         </Link>
