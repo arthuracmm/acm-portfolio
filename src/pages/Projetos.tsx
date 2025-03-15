@@ -68,13 +68,13 @@ export function Projetos() {
 
     const projetosFiltrados = (projeto: { nome: string }) => projeto.nome.toLowerCase().includes(inputSearch.toLowerCase())
     return (
-        <div className="flex flex-col h-screen w-full bg-zinc-950 font-montserrat text-white">
+        <div className="flex flex-col h-screen w-full bg-zinc-950 font-montserrat text-white items-center">
             <Header />
-            <div className="flex mt-20 h-screen justify-center items-center">
-                <div className="flex font-semibold gap-4 lg:w-[70%] md:w-[80%] w-[85%] lg:h-180 h-[90%] md:h-[75%] overflow-hidden p-4 md:p-8 bg-zinc-900 rounded-2xl">
-                    <div className="flex flex-col flex-1 gap-1 text-xl w-full relative overflow-hidden overflow-y-scroll">
-                        <div className="flex flex-col">
-                            <div className="flex flex-col gap-1 lg:text-xl items-center md:items-start">
+            <div className="flex flex-1 items-center justify-center w-full h-full bg-amber-900">
+                <div className="flex font-semibold gap-4 md:p-8 p-4 max-w-[90%] md:max-w-[80%] lg:max-w-[70%]">
+                    <div className="flex flex-col font-semibold bg-zinc-900 md:p-8 p-4 rounded-2xl shadow-lg justify-between">
+                        <div className="flex flex-col relative w-full h-full items-center md:items-start">
+                            <div className="flex flex-col gap-1 items-center md:items-start">
                                 <p className="lg:text-xl text-base">Projetos</p>
                                 <div className="lg:w-13 md:w-10 w-8 h-1 rounded-lg bg-teal-500" />
                             </div>
@@ -98,15 +98,15 @@ export function Projetos() {
                                         <><p className="-ml-1 md:text-xs text-[10px] font-light">Mais Novos</p> <ChevronDown size={15} /></> : <><p className="-ml-1 md:text-xs text-[10px] font-light">Mais Antigos</p> <ChevronUp size={15} /></>}
                                 </button>
                             </div>
-                            <div className="grid lg:grid-cols-3 md:grid-cols-2">
+                            <div className="grid lg:grid-cols-3 grid-cols-2">
                                 {projetosOrdenados.filter(projetosFiltrados).map(({ image, nome, descricao, linkPost, languages }) => (
                                     <Link to={linkPost} target="_blank">
                                         <div className="flex flex-col  gap-2 hover:bg-zinc-800 p-2 rounded-md hover:shadow-md hover:scale-105 transition-all">
-                                            <img src={image} alt={nome} className="rounded-xl w-fit aspect-[16/9] object-cover bg-zinc-900 border-1 border-zinc-800 shadow-lg" />
+                                            <img src={image} alt={nome} className="rounded-xl w-50 md:w-fit aspect-[16/9] object-cover bg-zinc-900 border-1 border-zinc-800 shadow-lg" />
                                             <div className="flex flex-col gap-1">
                                                 <h1 className="text-sm">{nome}</h1>
-                                                <p className="text-xs font-light text-white/50">{descricao}</p>
-                                                <div className="flex text-[10px] gap-2">
+                                                <p className="w-full truncate text-xs font-light text-white/50">{descricao}</p>
+                                                <div className="md:flex text-[10px] gap-2 hidden">
                                                     {languages.map((language) => (
 
                                                         <p className="px-2 py-1 bg-teal-800/50 rounded-full">{language}</p>

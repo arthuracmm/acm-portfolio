@@ -8,8 +8,8 @@ export function Home() {
     return (
         <div className="flex flex-col h-screen w-full bg-zinc-950 font-montserrat text-white items-center">
             <Header />
-            <div className="flex flex-1 h-full justify-center items-center lg:w-[70%] md:w-[80%] w-[85%] lg:h-180 min-h-[90%] md:min-h-[75%] mt-20 md:mt-0">
-                <div className="flex flex-col font-semibold gap-4 bg-zinc-900 md:p-8 p-4 rounded-2xl shadow-lg">
+            <div className="flex flex-1 items-center justify-center w-full h-full bg-amber-900">
+                <div className="flex flex-col font-semibold gap-4 bg-zinc-900 md:p-8 p-4 rounded-2xl shadow-lg max-w-[90%] md:max-w-[80%] lg:max-w-[70%]">
                     <div className="flex flex-col relative w-full h-full items-center md:items-start">
                         <div className="flex flex-col gap-1 items-center md:items-start">
                             <p className="lg:text-xl text-base">Home</p>
@@ -17,7 +17,7 @@ export function Home() {
                         </div>
                         <HeaderBlog />
                     </div>
-                    <div className="flex flex-1 lg:flex-row flex-col gap-8 h-full items-center p-4">
+                    <div className="flex flex-1 lg:flex-row flex-col md:gap-8 gap-2 h-full items-center p-4">
 
                         <img src='https://i.imgur.com/62gGTQL.png' alt='Foto de Arthur usando uma mochila' className="lg:size-100 md:size-80 size-50 rounded-full object-cover shadow-lg border-2 border-teal-500" />
 
